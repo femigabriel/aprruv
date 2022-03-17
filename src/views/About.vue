@@ -1,10 +1,6 @@
 <template>
   <div class="about">
-    <Form2
-      v-show="current == 1"
-      @next="current = current + 1"
-      @previous="current = current - 1"
-    />
+    <Form2 />
   </div>
 </template>
 <script>
