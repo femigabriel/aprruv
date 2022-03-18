@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <Form2 />
+    <Form2 v-show="current == 1" @previous="current = current - 1" />
   </div>
 </template>
 <script>
@@ -14,15 +14,8 @@ export default {
 
   data() {
     return {
-      current: 0,
+      current: 1,
     };
-  },
-
-  methods: {
-    previous() {
-      // this.current = this.current - 1;
-      this.$emit("previous");
-    },
   },
 };
 </script>

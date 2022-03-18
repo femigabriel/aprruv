@@ -18,12 +18,5 @@ export default {
       current: 0,
     };
   },
-
-  methods: {
-    next() {
-      // this.current = this.current + 1;
-      this.$emit("next");
-    },
-  },
 };
 </script>

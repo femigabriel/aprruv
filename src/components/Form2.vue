@@ -269,6 +269,7 @@ export default {
   name: "Form2",
   data() {
     return {
+      current: 1,
       errors: [],
     };
   },
@@ -281,12 +282,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .login-card {
   background: #fff;
   margin: 0 auto;
   padding: 0 20px;
-  /* height: 650px; */
+  height: 880px;
   border-top: 0;
   border-radius: 1rem;
   box-shadow: 0 16px 24px 0 rgb(0 0 0 / 8%);
@@ -314,6 +315,15 @@ export default {
   margin-right: -5px;
   margin-left: -5px;
 }
+.form-horizontal .form-group {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.form-group {
+  margin-bottom: 1rem;
+  margin-right: 20px;
+  margin-left: 20px;
+}
 textarea {
   display: block;
   box-sizing: border-box;
@@ -326,7 +336,7 @@ textarea {
   background-color: #fff;
   box-shadow: none;
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #4b4b4b;

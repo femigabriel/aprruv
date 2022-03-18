@@ -25,21 +25,7 @@
   </div>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      current: 0,
-    };
-  },
-  methods: {
-    previous() {
-      this.$emit("previous");
-    },
-    next() {
-      this.$emit("next");
-    },
-  },
-}
+export default {};
 </script>
 <style>
 body {
@@ -61,7 +47,7 @@ body {
   margin: 0 auto;
 }
 #app {
- font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #2c3e50;
 }

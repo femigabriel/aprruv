@@ -172,6 +172,7 @@ export default {
   },
   data() {
     return {
+      current: 0,
       errors: [],
       firstName: "",
       lastName: "",
@@ -284,7 +285,7 @@ select {
   background-color: #fff;
   box-shadow: none;
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #4b4b4b;
